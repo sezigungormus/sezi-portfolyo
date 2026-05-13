@@ -29,6 +29,7 @@
 		<div class="sticky">
 			<nav class="header-bar" aria-label="Ana gezinme">
 				<ul class="header-bar-nav">
+					<li><a href="#hero">Anasayfa</a></li>
 					<li><a href="#projects">Projelerim</a></li>
 					<li><a href="#skills">Yetenekler</a></li>
 					<li><a href="#about">Hakkımda</a></li>
@@ -48,8 +49,8 @@
 						kullanıcı odaklı ve değer üreten yazılım projelerine taşımaya odaklanıyorum.
 					</p>
 					<div class="hero-actions">
-						<a href="#projects" class="primary-button">Projelerimi Gör</a>
-						<a href="#contact" class="secondary-button">İletişime Geç</a>
+						<a href="#projects" class="primary-button">Projelerim</a>
+						<a href="#contact" class="secondary-button">İletişim</a>
 					</div>
 				</div>
 				<div class="header-hero-image-container">
@@ -65,7 +66,6 @@
 		<main>
 			<section id="projects" class="main-section projects-section">
 				<div class="section-heading">
-					<p class="eyebrow">Seçili çalışmalar</p>
 					<h2>Projelerim</h2>
 				</div>
 
@@ -86,19 +86,19 @@
 							</div>
 						</div>
 						<div class="project-content">
-							<p class="project-kicker">Vanilla JS + FastAPI + BERT</p>
-							<h3>Yerel Mail Demo</h3>
+							<p class="project-kicker">Python + FastAPI + BERT</p>
+							<h3>BERT Tabanlı Etik Mail Kontrolü</h3>
 							<p>
-								Sahte mail kutuları üzerinde çalışan, gönderim öncesinde BERT tabanlı model
-								ile etik içerik kontrolü yapan yerel bir mail uygulaması prototipi.
+								Türkçe kurumsal e-postalarda toksik, etik dışı ve ayrımcı ifadeleri tespit
+								etmeye yönelik NLP tabanlı web prototipi.
 							</p>
 							<div class="tag-list">
-								<span>Vanilla JavaScript</span>
+								<span>PyTorch</span>
 								<span>FastAPI</span>
 								<span>NLP</span>
 							</div>
 							<button class="detail-button" type="button" data-dialog-target="mail-dialog">
-								Detayı Gör
+								Detayları İnceleyin
 							</button>
 						</div>
 					</article>
@@ -119,8 +119,8 @@
 							<p class="project-kicker">ASP.NET Core + SQLite</p>
 							<h3>Stok Takip Sistemi</h3>
 							<p>
-								Küçük işletmeler için ürün, stok ve kritik seviye takibini kolaylaştıran;
-								admin/viewer rolleri ve Bootstrap arayüzüyle hazırlanmış web uygulaması.
+								Kurum içi stok takibini kolaylaştıran; ürün yönetimi, kritik stok uyarısı ve
+								rol bazlı erişim özelliklerine sahip web uygulaması.
 							</p>
 							<div class="tag-list">
 								<span>C#</span>
@@ -128,7 +128,7 @@
 								<span>EF Core</span>
 							</div>
 							<button class="detail-button" type="button" data-dialog-target="stock-dialog">
-								Detayı Gör
+								Detayları İnceleyin
 							</button>
 						</div>
 					</article>
@@ -219,8 +219,8 @@
 						<p class="eyebrow">Bağlantılar</p>
 						<h2>İletişim</h2>
 						<p>
-							Mail, GitHub, LinkedIn, CV ve Kariyer bağlantıları aynı alan üzerinden
-							güncellenebilir; CV bağlantısı son dosyaya yönlendirilmiştir.
+							Benimle iletişime geçmek, projelerimi incelemek veya CV'me ulaşmak için
+							bu bağlantıları kullanabilirsiniz.
 						</p>
 					</div>
 					<div class="contact-actions" aria-label="İletişim bağlantıları">
@@ -261,12 +261,11 @@
 			<div class="dialog-panel dialog-panel-wide">
 				<button class="dialog-close" type="button" data-close-dialog aria-label="Kapat">×</button>
 				<div class="dialog-header">
-					<p class="eyebrow">Vanilla JS + FastAPI + BERT</p>
-					<h2>Yerel Mail Demo</h2>
+					<p class="eyebrow">Python + PyTorch + FastAPI</p>
+					<h2>BERT Tabanlı Etik Mail Kontrolü</h2>
 					<p>
-						Yerel ortamda çalışan bu prototip, mail gönderimi öncesinde içeriği BERT tabanlı
-						bir sınıflandırma modeliyle kontrol eder ve karar sürecini arayüzde görünür hale
-						getirir.
+						Mail gönderimi öncesinde içeriği BERT tabanlı modelle analiz eden bu prototip,
+						model sonucunu ve karar akışını kullanıcı arayüzünde görünür hale getirir.
 					</p>
 				</div>
 
@@ -275,7 +274,7 @@
 						<div class="swiper-slide">
 							<div class="mail-mock login-mock">
 								<section class="mail-login-panel">
-									<p class="mock-eyebrow">Yerel Mail Demo</p>
+									<p class="mock-eyebrow">Etik Mail Kontrolü</p>
 									<h3>Giriş Yap</h3>
 									<label>E-posta</label>
 									<div class="mail-input">sezi@example.com</div>
@@ -288,7 +287,7 @@
 						<div class="swiper-slide">
 							<div class="mail-mock app-mock">
 								<aside class="mail-mock-sidebar">
-									<strong>Mail Demo</strong>
+									<strong>Etik Mail</strong>
 									<button>Mail Yaz</button>
 									<span class="active">Gelen Kutusu</span>
 									<span>Gönderilen</span>
@@ -366,8 +365,9 @@
 					<p class="eyebrow">ASP.NET Core Razor Pages</p>
 					<h2>Stok Takip Sistemi</h2>
 					<p>
-						Razor Pages, SQLite ve Entity Framework Core ile hazırlanan bu proje; ürün
-						yönetimi, kritik stok takibi ve rol bazlı kullanım senaryolarını gösterir.
+						Kurum içi stok takibini kolaylaştırmak için geliştirilen bu uygulama; ürün
+						yönetimi, kritik stok uyarısı, arama/filtreleme ve Admin/Viewer rol ayrımını
+						tek akışta toplar.
 					</p>
 				</div>
 
