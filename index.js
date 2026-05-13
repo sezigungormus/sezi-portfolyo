@@ -4,7 +4,7 @@ const CONTACT_LINKS = {
 	mail: "mailto:sezigungormus@gmail.com",
 	github: "https://github.com/sezigungormus",
 	linkedin: "https://www.linkedin.com/in/sezigungormus/",
-	cv: "#",
+	cv: "./images/cv.pdf",
 	kariyer: "https://www.kariyer.net/ozgecmis/sgza6jn8iu",
 };
 
@@ -71,7 +71,7 @@ function applyContactLinks() {
 		link.href = href;
 		link.removeAttribute("aria-disabled");
 
-		if (href.startsWith("http")) {
+		if (href.startsWith("http") || href.endsWith(".pdf")) {
 			link.target = "_blank";
 			link.rel = "noopener noreferrer";
 		}
